@@ -1,15 +1,9 @@
 import React, { Component } from "react";
 import "./Filter.css";
-import API from "../../utils/API";
 
 class Filter extends Component {
     state = {
         filter: ""
-    }
-
-    getEmployees() {
-        API.getEmployees().then(res =>
-            console.log(res));
     }
 
     render() {
@@ -21,7 +15,7 @@ class Filter extends Component {
                     <option>Male</option>
                     <option>Female</option>
                 </select>
-                <button onClick={this.getEmployees}>Sort</button>
+                <button>Sort</button>
             </div>
         )
     }

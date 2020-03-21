@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
+import EmployeeCard from "../EmployeeCard/EmployeeCard";
 
 class EmployeeContainer extends Component {
     state = {
@@ -13,7 +14,7 @@ class EmployeeContainer extends Component {
     render() {
         return (
             <div>
-    
+                <EmployeeCard employees={this.state.employees}/>
             </div>
         )
     };
