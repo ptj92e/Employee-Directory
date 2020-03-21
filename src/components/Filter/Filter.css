@@ -1,0 +1,34 @@
+.row {
+    justify-content: center;
+    margin: 10px;
+}
+label {
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Gotu', sans-serif;
+    color: rgb(59,45,80);
+}
+select {
+    width: 140px;
+    font-family: 'Gotu', sans-serif;
+}
+select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(128,161,144);
+    border: 1px solid rgb(128,161,144);
+}
+button {
+    background-color: rgb(128,161,144);
+    color: rgb(235,222,230);
+    font-family: 'Gotu', sans-serif;
+    margin-left: 10px;
+    border-radius: 15px;
+    width: 80px;
+}
+button:focus {
+    outline: none;
+}
+button:hover {
+    background-color: rgb(235,222,230);
+    color: rgb(128,161,144);
+}
