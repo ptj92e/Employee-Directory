@@ -3,13 +3,15 @@ import "./EmployeeCard.css";
 
 function EmployeeCard(props) {
     return (
-        <div>
-            {props.empoloyees.map(employee => (
-                <div className="col-4">
-                    <img src={employee.picture.medium}></img>
-                    <p id={employee.gender}>{employee.name.first + " " + employee.name.last}</p>
-                </div>
-            ))}
+        <div className="container">
+            <div className="row">
+                {props.employees.map(employee => (
+                    <div className="employeeCard">
+                        <img alt={employee.name.first + employee.name.last}src={employee.picture.large}></img>
+                        <h3>{employee.name.first + " " + employee.name.last}</h3>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
