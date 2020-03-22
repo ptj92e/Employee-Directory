@@ -1,23 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Filter.css";
 
-class Filter extends Component {
-    state = {
-        filter: ""
-    }
-
-    render() {
-        return (
-            <div className="row">
-                <label>Sort By Gender: </label>
-                <select>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-                <button>Sort</button>
-            </div>
-        )
-    }
+function Filter(props) {
+    
+    return (
+        <div className="row">
+            <label>Sort By Gender: </label>
+            <select id="genders">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <button onClick={() => props.genderFilter(props)}>Sort</button>
+        </div>
+    )
 }
 
 export default Filter;

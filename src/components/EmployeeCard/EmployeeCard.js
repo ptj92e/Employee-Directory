@@ -2,6 +2,7 @@ import React from "react";
 import "./EmployeeCard.css";
 
 function EmployeeCard(props) {
+    
     return (
         <div className="container">
             <div className="row">
@@ -13,7 +14,7 @@ function EmployeeCard(props) {
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default EmployeeCard;
