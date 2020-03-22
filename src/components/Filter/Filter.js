@@ -2,7 +2,7 @@ import React from "react";
 import "./Filter.css";
 
 function Filter(props) {
-    
+
     return (
         <div className="row">
             <label>Sort By Gender: </label>
@@ -11,6 +11,7 @@ function Filter(props) {
                 <option>Female</option>
             </select>
             <button onClick={() => props.genderFilter(props)}>Sort</button>
+            <button onClick={() => props.refreshPage()}>Reset</button>
         </div>
     )
 }
