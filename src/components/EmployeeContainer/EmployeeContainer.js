@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import EmployeeCard from "../EmployeeCard/EmployeeCard";
+import Filter from "../Filter/Filter";
 
 class EmployeeContainer extends Component {
     state = {
@@ -14,6 +15,7 @@ class EmployeeContainer extends Component {
     render() {
         return (
             <div>
+                <Filter />
                 <EmployeeCard employees={this.state.employees}/>
             </div>
         )

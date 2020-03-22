@@ -11,7 +11,6 @@ class Filter extends Component {
             <div className="row">
                 <label>Sort By Gender: </label>
                 <select>
-                    <option>Default</option>
                     <option>Male</option>
                     <option>Female</option>
                 </select>
